@@ -1,0 +1,270 @@
+body {
+    margin: 0;
+    background-color: #f0f5ed;
+    color: #000000;
+}
+
+header {
+    background-color: #164b35;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+header img {
+    width: 100px;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #a8ef75;
+}
+
+main {
+    padding: 30px;
+    text-align: center;
+}
+
+h1 {
+    color: #164b35;
+    font-size: 40px;
+}
+
+h2 {
+    color: #287a49;
+}
+
+.personaje {
+    background-color: white;
+    padding: 30px;
+    margin: 30px auto;
+    border-radius: 15px;
+}
+
+.cara {
+    width: 200px;
+    height: 200px;
+    background-color: hsl(127, 100%, 50%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 50px auto;
+}
+
+.ojo {
+    width: 75px;
+    height: 75px;
+    background-color: hsl(0, 0%, 0%);
+    border-radius: 50%;
+    position: absolute;
+    top: 24px;
+}
+
+.boca {
+    width: 100px;
+    height: 50px;
+    background-color: hsl(0, 0%, 0%);
+    border-radius: 0 0 50px 50px;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.brazo {
+    width: 45px;
+    height: 15px;
+    background-color: hsl(127, 100%, 50%);
+    border: 2px solid #168b28;
+    border-radius: 10px;
+    position: absolute;
+    top: 110px;
+}
+
+.brazo-izquierdo {
+    left: -35px;
+    transform: rotate(30deg);
+}
+
+.brazo-derecho {
+    right: -35px;
+    transform: rotate(-30deg);
+}
+
+
+.pierna {
+    width: 20px;
+    height: 35px;
+    background-color: hsl(127, 100%, 50%);
+    border: 2px solid #168b28;
+    border-radius: 8px;
+    position: absolute;
+    bottom: -30px;
+}
+
+.pierna-izquierda {
+    left: 45px;
+}
+
+.pierna-derecha {
+    right: 45px;
+}
+
+.capitulos {
+    display: flex;
+    gap: 25px;
+    margin: 30px 0;
+}
+
+.capitulo {
+    flex: 1;
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: left;
+}
+
+.capitulo h2 {
+    color: #287a49;
+}
+
+footer {
+    background-color: #164b35;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+form {
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 15px;
+    text-align: left;
+}
+
+ label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+ textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+ button {
+    margin-top: 20px;
+    margin-right: 10px;
+    padding: 10px 18px;
+    background-color: #245c3b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background-color: #387d50;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+    }
+
+    .capitulos {
+        flex-direction: column;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+}
+form {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 300px;
+    border-radius: 10px;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 5px;
+}
+
+textarea {
+    width: 250px;
+    height: 100px;
+}
+
+button {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+@media (max-width: 600px) {
+
+    body {
+        background-color: #181818;
+        color: white;
+    }
+
+    h1, h2, h3, p, label {
+        color: white;
+    }
+
+    header, footer {
+        background-color: #102e22;
+        color: white;
+    }
+
+    .personaje, .capitulo, form {
+        background-color: #292929;
+        color: white;
+    }
+
+    input, textarea {
+        background-color: #383838;
+        color: white;
+        border: 1px solid #777;
+    }
+
+    nav a {
+        color: white;
+    }
+
+}
