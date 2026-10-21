@@ -101,12 +101,12 @@ h2 {
 
 .brazo-izquierdo {
     left: -35px;
-    transform: rotate(30deg);
+    transition: transform 0.3s ease;
 }
 
 .brazo-derecho {
     right: -35px;
-    transform: rotate(-30deg);
+    transition: transform 0.3s ease;
 }
 
 
